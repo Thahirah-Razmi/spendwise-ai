@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpendWise AI</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>SpendWise AI</h1>
+
+        <p>
+            Your local AI-powered expense manager
+        </p>
+    </header>
+
+    <main>
+
+        <div id="chat"></div>
+
+        <div class="input-area">
+
+            <input
+                id="message"
+                type="text"
+                placeholder="Try: Add $25 for lunch"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+        <div class="examples">
+
+            <button onclick="useExample('Add 25 dollars for lunch')">
+                Add expense
+            </button>
+
+            <button onclick="useExample('Show my expenses')">
+                Show expenses
+            </button>
+
+            <button onclick="useExample('How much have I spent?')">
+                Total spending
+            </button>
+
+            <button onclick="useExample('How much did I spend on food?')">
+                Food spending
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>
